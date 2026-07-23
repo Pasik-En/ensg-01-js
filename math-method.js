@@ -29,35 +29,73 @@ console.log(Math.pow(7, 2));
 const myNum = 10;
 console.log(Math.pow(myNum, 3));
 
+const feature = "signal";
 
-// Generating random number
+switch (feature) {
+    case "red":
+        console.log("stop");
+        break;
+    case "yellow":
+        console.log("Get Ready");
+        break;
+    case "green":
+        console.log("Go");
+        break;
+    default:
+        console.log("Invalid signal");
+}
+
+const mark = 50;
+switch (true) {
+    case (mark <= 14):
+        console.log("poor performance");
+        break;
+    case (mark <= 29):
+        console.log("fair performance");
+        break;
+    case (mark <= 39):
+        console.log("good performance");
+        break;
+    case (mark <= 50):
+        console.log("very good performance");
+        break;
+    default:
+        console.log("not a valid grade");
+}
+
+const num1= 10;
+const num2 = 5;
+const sum  = num1 === 10 ? "even" : num2 === 5 ?;
+
+for(let i= 1; i <=20; 1++) {
+    console.log(i);
+}
+
+
+
+
+
+
 /* 
-Math.floor(Math.random() * (max - min) + min)
-This works with min (included) and max (excluded)
+============= Class Excercise ============
 
-Math.floor(Math.random() * (max - min + 1)) + min
-This works with both min and max inclusive
+- Create two variables named num1 and num2 and assign them any numbers.
+- Calculate the sum of the two numbers and store it in a variable called sum.
+
+- Use a ternary operator to check if the sum is even or odd.
+
+Display the following in the console:
+- The value of num1
+- The value of num2
+- The sum
+- Whether the sum is Even or Odd
+
+Print numbers from 1 to 20.
+Print numbers from 20 down to 1.
+Print all even numbers between 1 and 50.
+Print all odd numbers between 1 and 50.
+Print your name 10 times.
+Calculate the sum of numbers from 1 to 100.
+Print the multiplication table of 7.
 
 */
-
-console.log((2 * 7 + 6)); // 20
-console.log((2 * (7 + 6))); // 26
-
-
-
-// 5 and 89 (89 is excluded)
-{ // 0.9999888 * 88 = 87.999 + 5 = 88.999 = 88
-    const maxNumber = 89;
-    const minNumber = 5; 
-    const result = Math.floor(Math.random() * (maxNumber - minNumber) + minNumber);
-    console.log(result);
-}
-
-
-{
-    const maxNumber = 999999;
-    const minNumber = 100000; 
-    const result = Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
-
-    console.log("Result: ", result);
-}

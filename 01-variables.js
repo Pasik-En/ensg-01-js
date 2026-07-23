@@ -76,3 +76,21 @@ console.log(isSchoolOpen);
 let age = 45;
 console.log(age);
 age = 36;
+
+
+let myNickName = "Paschal";
+// alert ("My Name is Paschal");
+console.log(myNickName);
+
+
+const score = 90;
+const grade = score >= 90 ? "A" : score >= 80 ? "AB" : score >= 70 ? "B" : score >= 60 ? "c" : score >= 50 ? "D" : "F";
+
+console.log(grade);
+
+function salute (){
+    console.log("hello");
+    console.log("Paschal")
+}
+
+    salute();
